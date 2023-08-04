@@ -44,6 +44,7 @@ app.use("/*", notFoundHandler);
 //Handling the errors
 app.use(errorHandler);
 
-app.listen(5000, () => {
-  console.log("the port is listening on port 5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("the port is listening on port" + PORT);
 });
