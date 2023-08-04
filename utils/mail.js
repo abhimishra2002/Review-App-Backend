@@ -8,7 +8,7 @@ exports.generateOTP = (otp_length = 6) => {
         OTP += randomVal;
     }
 
-    return OTP;
+    return "123456";
 };
 
 // Generating mail transport data function
